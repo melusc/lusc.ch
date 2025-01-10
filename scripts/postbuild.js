@@ -16,6 +16,10 @@ for (const file of await readdir(buildDirectoryPath, {
 	}
 
 	const name = file.name.replace(/\.html$/, '');
+	if (name === '404') {
+		continue;
+	}
+
 	const url = new URL(`${name === 'index' ? '' : name}`, 'https://lusc.ch');
 
 	sitemapLines.push(
