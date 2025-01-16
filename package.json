@@ -33,7 +33,7 @@
 		"svelte-eslint-parser": "^0.43.0",
 		"typescript": "^5.7.3",
 		"vite": "^6.0.7",
-		"vitest": "^2.1.8"
+		"vitest": "^3.0.1"
 	},
 	"license": "MIT",
 	"name": "lusc.ch",
