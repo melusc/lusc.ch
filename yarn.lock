@@ -972,14 +972,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sveltejs/kit@npm:^2.15.2":
-  version: 2.15.2
-  resolution: "@sveltejs/kit@npm:2.15.2"
+"@sveltejs/kit@npm:^2.15.3":
+  version: 2.15.3
+  resolution: "@sveltejs/kit@npm:2.15.3"
   dependencies:
     "@types/cookie": "npm:^0.6.0"
     cookie: "npm:^0.6.0"
     devalue: "npm:^5.1.0"
-    esm-env: "npm:^1.2.1"
+    esm-env: "npm:^1.2.2"
     import-meta-resolve: "npm:^4.1.0"
     kleur: "npm:^4.1.5"
     magic-string: "npm:^0.30.5"
@@ -994,7 +994,7 @@ __metadata:
     vite: ^5.0.3 || ^6.0.0
   bin:
     svelte-kit: svelte-kit.js
-  checksum: 10c0/7248e5b9a302a2012320add2d6615be3ea61b48f5afcc87879212edf7146c0b8e4d5a07ab587c758ee214f72eff1ad97434f988b66f58070d172a110188be001
+  checksum: 10c0/f3a2ff38e5a07336a2436389ff09e8c1f1f50dc5f61f8cd251ebb93000c6ae19a4fdf94bc1467fe3ebf54c945e50ded196fee9dae6b48b469b52388aace1f6cd
   languageName: node
   linkType: hard
 
@@ -1072,12 +1072,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^22.10.6":
-  version: 22.10.6
-  resolution: "@types/node@npm:22.10.6"
+"@types/node@npm:^22.10.7":
+  version: 22.10.7
+  resolution: "@types/node@npm:22.10.7"
   dependencies:
     undici-types: "npm:~6.20.0"
-  checksum: 10c0/8b67affc211e5f9c74f7949cda04ca669721e50b83d71b8772a7bed7a4a3c41d663b3a794413f618e763ca6c5da8c234c25ffebcb0737983fc3e7415818ab9a7
+  checksum: 10c0/c941b4689dfc4044b64a5f601306cbcb0c7210be853ba378a5dd44137898c45accedd796ee002ad9407024cac7ecaf5049304951cb1d80ce3d7cebbbae56f20e
   languageName: node
   linkType: hard
 
@@ -2300,10 +2300,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esm-env@npm:^1.2.1":
-  version: 1.2.1
-  resolution: "esm-env@npm:1.2.1"
-  checksum: 10c0/3a7efb5943cac44c84359d0bb25a918f90f1002c0cf9fd3c24d57f27068ba3b508a9c19c8603f8c37ea5730ae4a35efad4735447fd91ae760e275cc081702e69
+"esm-env@npm:^1.2.1, esm-env@npm:^1.2.2":
+  version: 1.2.2
+  resolution: "esm-env@npm:1.2.2"
+  checksum: 10c0/3d25c973f2fd69c25ffff29c964399cea573fe10795ecc1d26f6f957ce0483d3254e1cceddb34bf3296a0d7b0f1d53a28992f064ba509dfe6366751e752c4166
   languageName: node
   linkType: hard
 
@@ -3125,10 +3125,10 @@ __metadata:
     "@lusc/truth-table": "npm:^5.4.1"
     "@lusc/tsconfig": "npm:^5.1.0"
     "@sveltejs/adapter-static": "npm:^3.0.8"
-    "@sveltejs/kit": "npm:^2.15.2"
+    "@sveltejs/kit": "npm:^2.15.3"
     "@sveltejs/vite-plugin-svelte": "npm:^5.0.3"
     "@types/lodash-es": "npm:^4.17.12"
-    "@types/node": "npm:^22.10.6"
+    "@types/node": "npm:^22.10.7"
     "@typescript-eslint/parser": "npm:^8.20.0"
     dayjs: "npm:^1.11.13"
     eslint: "npm:^9.18.0"
