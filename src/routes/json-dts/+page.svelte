@@ -1,6 +1,7 @@
 <script lang="ts">
 	import {jsonDts} from '@lusc/json-dts';
-	import type {JsonValue} from 'type-fest';
+
+	import type {JsonValue} from '../../common/type-helpers.js';
 
 	import './style.scss';
 
