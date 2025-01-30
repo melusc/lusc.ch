@@ -4126,13 +4126,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"type-fest@npm:^4.33.0":
-  version: 4.33.0
-  resolution: "type-fest@npm:4.33.0"
-  checksum: 10c0/20015eea353605e08e3f4b967291b225fa4e7c43361de44f39b88131715e41877458af80da59c8f17e40c0e3842298996f0651219dc9823e35c7e46ecbc8a44f
-  languageName: node
-  linkType: hard
-
 "typescript-eslint@npm:^8.21.0":
   version: 8.22.0
   resolution: "typescript-eslint@npm:8.22.0"
