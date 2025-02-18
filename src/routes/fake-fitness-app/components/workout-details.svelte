@@ -1,6 +1,6 @@
 <script lang="ts">
 	import * as CONSTS from '../consts.ts';
-	import {isValidDuration, parseDuration, toSpeed} from '../util.ts';
+	import {isValidDuration, parseDuration, toSpeed} from '../utilities.ts';
 
 	import Run from './icons/run.svelte';
 

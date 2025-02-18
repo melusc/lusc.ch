@@ -10,11 +10,9 @@ export function gcd(a_: ExpectedNumber, b_: ExpectedNumber): bigint {
 	const bothNegative = a_ < 0 && b_ < 0;
 
 	const a = absBigInt(a_);
-
 	const b = absBigInt(b_);
 
-	let dividend = a > b ? a : b;
-	let divisor = a > b ? b : a;
+	let [dividend, divisor] = a > b ? [a, b] : [b, a];
 
 	const key = `${dividend},${divisor}`;
 

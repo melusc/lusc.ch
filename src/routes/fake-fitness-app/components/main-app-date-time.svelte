@@ -15,7 +15,7 @@
 		timeValid,
 		toDate,
 		toTime,
-	} from '../util.ts';
+	} from '../utilities.ts';
 
 	import TimeInput from './time-input.svelte';
 

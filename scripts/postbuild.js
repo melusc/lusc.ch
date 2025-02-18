@@ -8,6 +8,7 @@ const sitemapLines = [
 	'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
 ];
 
+// eslint-disable-next-line security/detect-non-literal-fs-filename
 for (const file of await readdir(buildDirectoryPath, {
 	withFileTypes: true,
 })) {
@@ -32,11 +33,13 @@ for (const file of await readdir(buildDirectoryPath, {
 
 sitemapLines.push('</urlset>');
 
+// eslint-disable-next-line security/detect-non-literal-fs-filename
 await writeFile(
 	new URL('../build/sitemap.xml', import.meta.url),
 	sitemapLines.join('\n'),
 );
 
+// eslint-disable-next-line security/detect-non-literal-fs-filename
 await writeFile(
 	new URL('../build/sitemap.xml.gz', import.meta.url),
 	gzipSync(sitemapLines.join('\n')),

@@ -6,7 +6,7 @@
 	import RenderError from './components/render-error.svelte';
 	import Table from './components/table.svelte';
 	import './style.scss';
-	import {getHash, tryGenerateTable} from './util.ts';
+	import {getHash, tryGenerateTable} from './utilities.ts';
 
 	import {browser} from '$app/environment';
 

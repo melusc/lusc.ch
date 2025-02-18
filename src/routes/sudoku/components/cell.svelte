@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type {MetaKeys} from '../util';
+	import type {MetaKeys} from '../utilities.ts';
 
 	const {
 		isValid,

@@ -5,7 +5,7 @@
 	import KeyboardlessInput from './components/keyboardless-input.svelte';
 	import * as sudokuExamples from './sudoku-examples.ts';
 	import {makeSudokuState} from './sudoku-state.ts';
-	import {getNewFocused, type MetaKeys} from './util.ts';
+	import {getNewFocused, type MetaKeys} from './utilities.ts';
 
 	import './style.scss';
 
