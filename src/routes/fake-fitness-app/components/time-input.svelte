@@ -8,7 +8,7 @@
 </script>
 
 <script lang="ts">
-	import {timeValid, toTime} from '../util.ts';
+	import {timeValid, toTime} from '../utilities.ts';
 
 	let {
 		class: className,
