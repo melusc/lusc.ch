@@ -1,7 +1,7 @@
 <div class="help">
 	<div class="help-text">
-		Using Firefox? Use{' '}
-		<code>{":screenshot --dpr <number> --selector '.fake-app'"}</code>{' '}
+		Using Firefox? Use
+		<code>:screenshot --dpr &lt;number&gt; --selector '.fake-app'</code>
 		in the web console
 	</div>
 </div>

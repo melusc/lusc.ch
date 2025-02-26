@@ -48,7 +48,7 @@
 	<div class="time-inputs">
 		<TimeInput bind:time={timeFrom} width="5ch" />
 		<span>
-			{'-  '}{#if timeValid(timeFrom) && durationTimeSinceMidnightInSeconds !== false}{toTime(
+			- {#if timeValid(timeFrom) && durationTimeSinceMidnightInSeconds !== false}{toTime(
 					timeFrom,
 				)
 					.add(durationTimeSinceMidnightInSeconds, 's')
