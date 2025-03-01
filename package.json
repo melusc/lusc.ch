@@ -19,7 +19,7 @@
 		"@sveltejs/kit": "^2.17.3",
 		"@sveltejs/vite-plugin-svelte": "^5.0.3",
 		"@types/lodash-es": "^4.17.12",
-		"@types/node": "^22.13.5",
+		"@types/node": "^22.13.8",
 		"@typescript-eslint/parser": "^8.25.0",
 		"eslint": "^9.21.0",
 		"eslint-plugin-svelte": "^3.0.2",
@@ -27,10 +27,10 @@
 		"prettier-plugin-svelte": "^3.3.3",
 		"rimraf": "^6.0.1",
 		"sass": "^1.85.1",
-		"svelte": "^5.20.4",
+		"svelte": "^5.20.5",
 		"svelte-check": "^4.1.4",
 		"svelte-eslint-parser": "^1.0.0",
-		"typescript": "^5.7.3",
+		"typescript": "^5.8.2",
 		"vite": "^6.2.0",
 		"vitest": "^3.0.7"
 	},
@@ -47,5 +47,5 @@
 		"test": "vitest run"
 	},
 	"version": "1.0.0",
-	"packageManager": "yarn@4.6.0"
+	"packageManager": "yarn@4.7.0"
 }
