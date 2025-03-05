@@ -3,8 +3,8 @@
 	"type": "module",
 	"dependencies": {
 		"@lusc/json-dts": "^4.2.3",
-		"@lusc/sudoku": "^5.1.1",
-		"@lusc/truth-table": "^5.4.2",
+		"@lusc/sudoku": "^5.2.0",
+		"@lusc/truth-table": "^5.5.0",
 		"dayjs": "^1.11.13",
 		"hex-rgb": "^5.0.0",
 		"json5": "^2.2.3",
@@ -16,21 +16,21 @@
 		"@lusc/eslint-config": "^6.1.0",
 		"@lusc/tsconfig": "^6.0.2",
 		"@sveltejs/adapter-static": "^3.0.8",
-		"@sveltejs/kit": "^2.17.3",
+		"@sveltejs/kit": "^2.18.0",
 		"@sveltejs/vite-plugin-svelte": "^5.0.3",
 		"@types/lodash-es": "^4.17.12",
-		"@types/node": "^22.13.5",
-		"@typescript-eslint/parser": "^8.25.0",
+		"@types/node": "^22.13.9",
+		"@typescript-eslint/parser": "^8.26.0",
 		"eslint": "^9.21.0",
 		"eslint-plugin-svelte": "^3.0.2",
-		"prettier": "^3.5.2",
+		"prettier": "^3.5.3",
 		"prettier-plugin-svelte": "^3.3.3",
 		"rimraf": "^6.0.1",
 		"sass": "^1.85.1",
-		"svelte": "^5.20.4",
+		"svelte": "^5.22.2",
 		"svelte-check": "^4.1.4",
 		"svelte-eslint-parser": "^1.0.0",
-		"typescript": "^5.7.3",
+		"typescript": "^5.8.2",
 		"vite": "^6.2.0",
 		"vitest": "^3.0.7"
 	},
@@ -47,5 +47,5 @@
 		"test": "vitest run"
 	},
 	"version": "1.0.0",
-	"packageManager": "yarn@4.6.0"
+	"packageManager": "yarn@4.7.0"
 }
