@@ -69,13 +69,17 @@ jobs:
           name: build
       - name: Write ssh key
         run: |
-          mkdir -p ~/.ssh
+          mkdir --parents ~/.ssh
           chmod 700 ~/.ssh
           echo "$SSH_KEY" > ~/.ssh/ssh-key
           chmod 600 ~/.ssh/ssh-key
         env:
           SSH_KEY: ${{ secrets.SSH_KEY }}
       - name: Sync
-        run: rsync -vha --checksum --delete -e "ssh -i ~/.ssh/ssh-key -o StrictHostKeyChecking=accept-new" . "${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST}}:/var/www/lusc.ch/"
+        run: |
+          rsync --verbose --human-readable --archive \
+          --checksum --delete \
+          --rsh "ssh -i ~/.ssh/ssh-key -o StrictHostKeyChecking=accept-new" \
+          . "${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST}}:/var/www/lusc.ch/"
       - run: rm ~/.ssh/ssh-key
         if: always()
