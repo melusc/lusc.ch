@@ -5,7 +5,6 @@
 	import Input from './components/input.svelte';
 	import RenderError from './components/render-error.svelte';
 	import Table from './components/table.svelte';
-	import './style.scss';
 	import {getHash, tryGenerateTable} from './utilities.ts';
 
 	import {browser} from '$app/environment';
@@ -75,10 +74,17 @@
 	{/if}
 </div>
 
-<style>
+<style lang="scss">
+	@use '../../common/fonts/JetBrainsMono-Regular.scss';
+
 	#truth-table {
 		display: flex;
 		flex-direction: column;
 		gap: 1em;
+
+		font-size: 23px;
+		padding: 0.5em 1em;
+
+		--table-border: 3px solid var(--border);
 	}
 </style>
