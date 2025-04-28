@@ -33,7 +33,7 @@
 	}
 
 	function clearSudoku(): void {
-		sudokuState.clearCell();
+		sudokuState.reset();
 	}
 
 	function solve(): void {
