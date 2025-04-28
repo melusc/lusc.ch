@@ -87,8 +87,4 @@
 		text-align: right;
 		margin-right: 2px;
 	}
-
-	.distance .vertical-border {
-		margin: 0 10px;
-	}
 </style>
