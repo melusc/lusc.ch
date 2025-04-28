@@ -1,7 +1,3 @@
-<script lang="ts">
-	import './style.scss';
-</script>
-
 <svelte:head>
 	<title>Not Found</title>
 </svelte:head>
@@ -16,3 +12,34 @@
 		<a href="/">lusc.ch</a>
 	</footer>
 </div>
+
+<style lang="scss">
+	#_404 {
+		font-size: 45px;
+		text-align: center;
+
+		height: 100vh;
+		width: 100vw;
+
+		display: grid;
+		grid-template-rows: 1fr auto;
+		justify-content: center;
+	}
+
+	main {
+		align-self: center;
+	}
+
+	footer {
+		align-self: flex-end;
+		padding: 1em;
+	}
+
+	.emphasise {
+		color: var(--blue);
+	}
+
+	a {
+		font-size: 0.5em;
+	}
+</style>
