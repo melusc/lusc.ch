@@ -1,10 +1,12 @@
 <script lang="ts">
 	const {height, margin}: {height: number; margin: number} = $props();
-
-	const style = $derived(`height: ${height / 7}vmin; margin: 0 ${margin}px;`);
 </script>
 
-<div class="vertical-border" {style}></div>
+<div
+	class="vertical-border"
+	style:height={`${height / 7}vmin`}
+	style:margin={`0 ${margin}px`}
+></div>
 
 <style>
 	.vertical-border {
