@@ -2,7 +2,6 @@
 	import Download from './download.svelte';
 	import {unlock} from './unlock.ts';
 	import Upload from './upload.svelte';
-	import './style.scss';
 
 	let name = $state<string>();
 
@@ -43,7 +42,9 @@
 	</div>
 </div>
 
-<style>
+<style lang="scss">
+	@use '../../common/fonts/OpenSans-Light.scss';
+
 	.error {
 		margin-top: 2em;
 		font-size: 1.4em;
@@ -54,5 +55,13 @@
 		position: absolute;
 		right: 2em;
 		bottom: 2em;
+	}
+
+	#unlock-office-documents {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		padding: 2em;
 	}
 </style>
