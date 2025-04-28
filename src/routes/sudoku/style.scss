@@ -29,9 +29,10 @@ html {
 #sudoku {
 	display: grid;
 	grid-template:
-		'error				sudoku	inputs'
-		'spacing-left	solve		spacing-right'
-		'spacing-left	clear		spacing-right';
+		'spacing-left  sudoku   inputs'
+		'spacing-left  error    spacing-right'
+		'spacing-left  solve    spacing-right'
+		'spacing-left  clear    spacing-right';
 
 	grid-template-columns: repeat(3, 1fr);
 
@@ -45,10 +46,11 @@ html {
 @media (max-width: 600px) {
 	#sudoku {
 		grid-template:
-			'sudoku sudoku sudoku'
-			'solve solve solve'
-			'clear clear clear'
-			'spacing-r1 inputs error';
+			'sudoku        sudoku  sudoku'
+			'error         error   error'
+			'solve         solve   solve'
+			'clear         clear   clear'
+			'spacing-left  inputs  spacing-right';
 
 		grid-template-columns: repeat(3, 1fr);
 
