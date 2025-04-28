@@ -46,14 +46,10 @@ input {
 }
 
 .horizontal-vertical-center {
-	position: absolute;
-	top: 0;
-	left: 0;
+	display: grid;
+	place-items: center;
 	height: 100%;
 	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 .invalid,
