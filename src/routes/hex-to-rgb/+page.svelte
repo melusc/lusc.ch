@@ -24,6 +24,13 @@
 		setHashInstantly(red, green, blue, alpha);
 	}
 
+	function handleKeydown(event: KeyboardEvent) {
+		const code = event.code.toLowerCase();
+		if (code === 'enter' || code === 'space') {
+			randomColour();
+		}
+	}
+
 	$effect(() => {
 		setHashDebounced(red, green, blue, alpha);
 	});
@@ -107,7 +114,7 @@
 					<div
 						class="rainbow-text"
 						onclick={randomColour}
-						onkeydown={randomColour}
+						onkeydown={handleKeydown}
 						role="button"
 						tabindex="0"
 					>
