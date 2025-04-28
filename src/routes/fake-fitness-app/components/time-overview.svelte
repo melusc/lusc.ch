@@ -5,6 +5,8 @@
 	import * as CONSTS from '../consts.ts';
 	import {isValidDuration, calculateTimePerDistance} from '../utilities.ts';
 
+	import VerticalBorder from './vertical-border.svelte';
+
 	dayjs.extend(customParseFormat);
 
 	let {
@@ -34,7 +36,7 @@
 				placeholder="0.00"
 			/><small>km</small>
 		</div>
-		<div class="vertical-border height-12"></div>
+		<VerticalBorder height={12} margin={10} />
 		<div class="time-per-distance" class:invalid={timePerDistance === false}>
 			{timePerDistance === false ? 'Invalid' : timePerDistance}<small>/km</small
 			>

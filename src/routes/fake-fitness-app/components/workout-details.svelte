@@ -3,6 +3,7 @@
 	import {isValidDuration, parseDuration, toSpeed} from '../utilities.ts';
 
 	import Run from './icons/run.svelte';
+	import VerticalBorder from './vertical-border.svelte';
 
 	const {duration, distance}: {duration: string; distance: string} = $props();
 	let totalDuration = $state(CONSTS.duration);
@@ -24,7 +25,7 @@
 				<div class="table-value">{duration}</div>
 				<div class="table-explanation">Workout duration</div>
 			</div>
-			<div class="vertical-border height-22"></div>
+			<VerticalBorder height={22} margin={0} />
 			<div>
 				<input
 					class="input-remove-input-visuals table-value"
@@ -42,7 +43,7 @@
 				<div class="table-value">{distance}</div>
 				<div class="table-explanation">Distance(km)</div>
 			</div>
-			<div class="vertical-border height-22"></div>
+			<VerticalBorder height={22} margin={0} />
 			<div>
 				<Run />
 			</div>
@@ -53,7 +54,7 @@
 				<div class="table-value">{toSpeed(duration, distance) || ''}</div>
 				<div class="table-explanation">Avg. speed(km/h)</div>
 			</div>
-			<div class="vertical-border height-22"></div>
+			<VerticalBorder height={22} margin={0} />
 			<div>
 				<input
 					class="input-remove-input-visuals table-value"
@@ -100,9 +101,6 @@
 		width: 100%;
 		border: none;
 		border-bottom: 1px solid var(--border-color);
-	}
-	.table :global(.vertical-border) {
-		color: var(--border-color);
 	}
 
 	.table-value,

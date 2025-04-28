@@ -62,3 +62,50 @@
 	</div>
 	<Help />
 </div>
+
+<style>
+	#fake-fitness-app {
+		height: 100vh;
+		width: 100vw;
+
+		display: grid;
+
+		grid-template-columns: 1fr auto 1fr;
+		grid-template-rows: 100%;
+
+		align-items: center;
+
+		justify-items: center;
+	}
+
+	.inputs {
+		grid-column: 1 / 2;
+
+		height: 100%;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		font-size: 3vmin;
+
+		color: var(--text-black);
+	}
+	.inputs > div {
+		margin: 0.75em 0;
+
+		width: 80%;
+
+		display: grid;
+		grid-template-columns: 2fr 3fr;
+
+		align-items: center;
+		justify-items: center;
+	}
+
+	.inputs label {
+		margin-right: 3px;
+		color: var(--text-white);
+	}
+</style>
