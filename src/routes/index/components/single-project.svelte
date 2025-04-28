@@ -16,7 +16,7 @@
 		<a href={id} class="id-anchor">#</a>
 		<div class="single-project" id={key}>
 			<a href={project.href} data-sveltekit-reload>{text}</a>
-			<div>{project.description}</div>
+			<p>{project.description}</p>
 		</div>
 	</div>
 {/if}
@@ -45,7 +45,7 @@
 			}
 
 			.single-project {
-				background-color: color.adjust($card, $lightness: 1%);
+				background-color: color.adjust($card, $lightness: 2%);
 
 				transform: scale(0.98);
 			}
@@ -70,10 +70,7 @@
 			transform ease 0.2s,
 			background-color ease 0.2s;
 
-		/* box-shadow: 3px 3px 7px color.adjust($card, $lightness: -5%); */
-
 		> a {
-			margin-bottom: 1em;
 			font-size: 1.2em;
 		}
 	}
