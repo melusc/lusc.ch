@@ -126,3 +126,21 @@
 		</div>
 	</div>
 </div>
+
+<style>
+	#hex-to-rgb {
+		background-image:
+			linear-gradient(45deg, #ababab 25%, transparent 25%),
+			linear-gradient(45deg, transparent 75%, #ababab 75%),
+			linear-gradient(45deg, transparent 75%, #ababab 75%),
+			linear-gradient(45deg, #ababab 25%, transparent 25%);
+
+		background-size: 50px 50px;
+		background-position:
+			0 0,
+			0 0,
+			-25px -25px,
+			25px 25px;
+		height: 100vh;
+	}
+</style>
