@@ -2,9 +2,9 @@
 	"author": "lusc",
 	"type": "module",
 	"dependencies": {
-		"@lusc/json-dts": "^4.2.3",
-		"@lusc/sudoku": "^5.2.0",
-		"@lusc/truth-table": "^5.5.0",
+		"@lusc/json-dts": "^5.0.0",
+		"@lusc/sudoku": "^6.0.0",
+		"@lusc/truth-table": "^6.0.0",
 		"dayjs": "^1.11.13",
 		"hex-rgb": "^5.0.0",
 		"json5": "^2.2.3",
@@ -14,7 +14,7 @@
 	},
 	"devDependencies": {
 		"@lusc/eslint-config": "^7.1.1",
-		"@lusc/tsconfig": "^6.0.2",
+		"@lusc/tsconfig": "^7.0.0",
 		"@sveltejs/adapter-static": "^3.0.8",
 		"@sveltejs/kit": "^2.20.7",
 		"@sveltejs/vite-plugin-svelte": "^5.0.3",

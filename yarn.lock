@@ -449,33 +449,33 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@lusc/json-dts@npm:^4.2.3":
-  version: 4.2.3
-  resolution: "@lusc/json-dts@npm:4.2.3"
+"@lusc/json-dts@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "@lusc/json-dts@npm:5.0.0"
   dependencies:
     camelcase: "npm:^8.0.0"
-  checksum: 10c0/ae3999eecb06270ca75ae0df6991058a8ff493cc2bf976a75daf644b940e6f46571bd0949b4c807f34b846dbcf4a0570f4ae4827dd228814fcb019283fdac84d
+  checksum: 10c0/4e517d72f034ca590b47ddd7ef17ab7527705b965691e8b4465e7b3a97833c381f8c927880970ad9d46ae07e0e096f70539f3121c7be9e2db37d05ad6c593b62
   languageName: node
   linkType: hard
 
-"@lusc/sudoku@npm:^5.2.0":
-  version: 5.2.0
-  resolution: "@lusc/sudoku@npm:5.2.0"
-  checksum: 10c0/334b661468beee3f06d69d2fe464fdeba95a605f257f9d9aae32b579405a73290e1b2a481dfbb2a60f712f109bf117b8bada10fb890ceddf68b32cf71953d1a6
+"@lusc/sudoku@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "@lusc/sudoku@npm:6.0.0"
+  checksum: 10c0/4c303475c6d14184a3b810dc59158ecc9ac29c5e01f6713868a3992f75b36c2b2b8a2f56219cac1554a2be199a34fc1e2e9375bb4933757b05aae1f1f6d3b966
   languageName: node
   linkType: hard
 
-"@lusc/truth-table@npm:^5.5.0":
-  version: 5.5.0
-  resolution: "@lusc/truth-table@npm:5.5.0"
-  checksum: 10c0/f27767f7ec92e48da9a25977757319729d276864b865b6b8d14d2f9fd6af0c21ec55a834abf443b465876bf79f3980364966e816e3a4f11020235953dc590d76
+"@lusc/truth-table@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "@lusc/truth-table@npm:6.0.0"
+  checksum: 10c0/c87f562275a6d391c7cbcd0fe1e6c0381acd599e2c5b6769cc9565cb84aebd83f19d3f9e390fcba13e6cebd669f3777eb4f539eb2f0be3dcace09bdaadf38ad8
   languageName: node
   linkType: hard
 
-"@lusc/tsconfig@npm:^6.0.2":
-  version: 6.0.2
-  resolution: "@lusc/tsconfig@npm:6.0.2"
-  checksum: 10c0/931ef747003a2644ced047533bd0f1dce67c60249ae44541b458eac60128f157407836d9bc0166b44396a1f6addf1fdedcfad5b731365999f55b3bf3f49a68f3
+"@lusc/tsconfig@npm:^7.0.0":
+  version: 7.0.0
+  resolution: "@lusc/tsconfig@npm:7.0.0"
+  checksum: 10c0/1ae8c028bcc5fdd6a62c752d464607096d59490c7055f8b90c19b6a374323f0adc5a5e2d55d34f313ea8f2bf3d965fd10bce72a72447a90253182ed35347e713
   languageName: node
   linkType: hard
 
@@ -2880,10 +2880,10 @@ __metadata:
   resolution: "lusc.ch@workspace:."
   dependencies:
     "@lusc/eslint-config": "npm:^7.1.1"
-    "@lusc/json-dts": "npm:^4.2.3"
-    "@lusc/sudoku": "npm:^5.2.0"
-    "@lusc/truth-table": "npm:^5.5.0"
-    "@lusc/tsconfig": "npm:^6.0.2"
+    "@lusc/json-dts": "npm:^5.0.0"
+    "@lusc/sudoku": "npm:^6.0.0"
+    "@lusc/truth-table": "npm:^6.0.0"
+    "@lusc/tsconfig": "npm:^7.0.0"
     "@sveltejs/adapter-static": "npm:^3.0.8"
     "@sveltejs/kit": "npm:^2.20.7"
     "@sveltejs/vite-plugin-svelte": "npm:^5.0.3"
