@@ -8,7 +8,7 @@
 		onchoice,
 	}: {
 		layer: LayerType;
-		winningCells: Set<number>;
+		winningCells: ReadonlySet<number>;
 		onchoice: (choice: number) => void;
 	} = $props();
 </script>

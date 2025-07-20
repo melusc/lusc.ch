@@ -25,6 +25,7 @@
 
 	$effect(() => {
 		if (browser) {
+			// eslint-disable-next-line svelte/prefer-svelte-reactivity
 			const newUrl = new URL(location.href);
 
 			let newHash: string;
