@@ -9,7 +9,7 @@
 		onchoice,
 	}: {
 		cell: CellType;
-		winningCells: Set<number>;
+		winningCells: ReadonlySet<number>;
 		onchoice: (choice: number) => void;
 	} = $props();
 

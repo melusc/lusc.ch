@@ -6,7 +6,7 @@
 
 	let game = $state(new TicTacToe());
 	let winner = $state<Player>();
-	let winningCells = $state(new Set<number>());
+	let winningCells = $state<ReadonlySet<number>>(new Set<number>());
 
 	const turn = $derived(game.turn);
 	const layers = $derived(game.getLayers());
@@ -18,6 +18,7 @@
 	}
 
 	function setWinningCells(groups: readonly Group[]): void {
+		// eslint-disable-next-line svelte/prefer-svelte-reactivity
 		const cells = new Set<number>();
 
 		for (const group of groups) {
