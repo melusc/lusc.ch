@@ -63,7 +63,7 @@
 			/>
 		{/each}
 	</div>
-	{#if typeof error !== 'undefined'}<div class="error">{error}</div>{/if}
+	{#if error !== undefined}<div class="error">{error}</div>{/if}
 	<button type="button" title="Solve sudoku" class="solve" onclick={solve}>
 		Solve
 	</button>
