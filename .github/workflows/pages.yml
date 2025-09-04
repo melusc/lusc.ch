@@ -33,23 +33,23 @@ jobs:
         run: corepack enable
 
       - name: Install dependencies
-        run: yarn install --immutable
+        run: pnpm install --frozen-lockfile
 
       - name: Type checking
-        run: yarn check
+        run: pnpm check
 
       - name: Check code style
         run: |
-          yarn run fmt
+          pnpm fmt
           git --no-pager diff --exit-code
 
       - name: CI tests
-        run: yarn test
+        run: pnpm test
 
       - name: Build
-        run: yarn vite build
+        run: pnpm vite build
 
-      - run: yarn node scripts/postbuild.js
+      - run: node scripts/postbuild.js
 
       - name: Upload build
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4

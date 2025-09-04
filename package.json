@@ -38,8 +38,8 @@
 	"name": "lusc.ch",
 	"private": true,
 	"scripts": {
-		"build": "yarn check && vite build && yarn postbuild",
-		"postbuild": "yarn node scripts/postbuild.js",
+		"build": "pnpm check && vite build && pnpm postbuild",
+		"postbuild": "node scripts/postbuild.js",
 		"fmt": "prettier -w . **/*.svelte && eslint --fix",
 		"dev": "vite dev",
 		"preview": "vite preview",
@@ -47,5 +47,5 @@
 		"test": "vitest run"
 	},
 	"version": "1.0.0",
-	"packageManager": "yarn@4.9.3"
+	"packageManager": "pnpm@10.15.1+sha512.34e538c329b5553014ca8e8f4535997f96180a1d0f614339357449935350d924e22f8614682191264ec33d1462ac21561aff97f6bb18065351c162c7e8f6de67"
 }
