@@ -14,6 +14,7 @@
 	});
 </script>
 
+<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
 <a href={url} download={name}>
 	<DownloadIcon /> Download unlocked file
 </a>

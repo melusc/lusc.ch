@@ -8,13 +8,16 @@
 
 {#if project.type === 'title'}
 	<div class="project-row title">
+		<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
 		<a href={id} class="id-anchor">#</a>
 		<h1 id={key}>{text}</h1>
 	</div>
 {:else}
 	<div class="project-row">
+		<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
 		<a href={id} class="id-anchor">#</a>
 		<div class="single-project" id={key}>
+			<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
 			<a href={project.href} data-sveltekit-reload>{text}</a>
 			<p>{project.description}</p>
 		</div>

@@ -1,3 +1,7 @@
+<script>
+	import {resolve} from '$app/paths';
+</script>
+
 <svelte:head>
 	<title>Not Found</title>
 </svelte:head>
@@ -9,7 +13,7 @@
 	</main>
 
 	<footer>
-		<a href="/">lusc.ch</a>
+		<a href={resolve('/')}>lusc.ch</a>
 	</footer>
 </div>
 

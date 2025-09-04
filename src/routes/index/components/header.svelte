@@ -1,10 +1,12 @@
 <script lang="ts">
 	import Github from './icons/github.svelte';
+
+	import {resolve} from '$app/paths';
 </script>
 
 <header>
 	<div class="header-start">
-		<a href="/">lusc.ch</a>
+		<a href={resolve('/')}>lusc.ch</a>
 	</div>
 	<div class="header-end">
 		<a href="https://github.com/melusc" rel="noreferrer noopener">
