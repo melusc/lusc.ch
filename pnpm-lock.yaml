@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@lusc/json-dts':
-        specifier: ^5.1.0
-        version: 5.1.0
+        specifier: ^6.0.0
+        version: 6.0.0
       '@lusc/sudoku':
         specifier: ^6.1.0
         version: 6.1.0
@@ -366,9 +366,9 @@ packages:
     peerDependencies:
       eslint: ^9.35.0
 
-  '@lusc/json-dts@5.1.0':
-    resolution: {integrity: sha512-rGKPpC4A5JSUgMvdIWWGjJ2Vam7CSKiHO5jSgtGyqUQGShwr36wcQcQnJ9S6ZP2DMSrfiuPZhef6Ftdgvccs7Q==}
-    engines: {node: ^20.19.1 || ^22.15.0 || ^23.11.0 || ^24.6.0}
+  '@lusc/json-dts@6.0.0':
+    resolution: {integrity: sha512-zGdEgbgOeQUUx3y1XcwEqHsn+eQ0ObK5WfhRdKFYrPMZTZYWriRrfhRL3kbvsDNDjNcGsJg9KNgW49pMkkCUmQ==}
+    engines: {node: ^20.19.1 || ^22.15.0 || ^24.6.0}
 
   '@lusc/sudoku@6.1.0':
     resolution: {integrity: sha512-IQreSVg5WVuB4rw9SlJyP4PKF7Dv7uov/hWcFsDGOoNuzzCSrY/V7gY53FavD5dO9zUnu5wEf3TGQPEOsYXNtg==}
@@ -2191,7 +2191,7 @@ snapshots:
       - eslint-plugin-import
       - supports-color
 
-  '@lusc/json-dts@5.1.0':
+  '@lusc/json-dts@6.0.0':
     dependencies:
       camelcase: 8.0.0
 
