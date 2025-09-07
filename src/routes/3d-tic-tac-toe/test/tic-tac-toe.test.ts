@@ -29,7 +29,7 @@ test('#getGroups', () => {
 		+ (2 * 4 * 3) // 2d diagonals, 2 per layer, 4 layers, 3 directiosn
 		+ 4; // 3d diagonals
 
-	const deduplicated = new Set(foundGroups.sort());
+	const deduplicated = new Set(foundGroups.toSorted());
 
 	expect(deduplicated).toMatchSnapshot();
 	// Test if it contains all

@@ -7,7 +7,7 @@ export function sortJson(value: unknown): unknown {
 		return value.map(value => sortJson(value));
 	}
 
-	const keys = Object.keys(value).sort((a, b) =>
+	const keys = Object.keys(value).toSorted((a, b) =>
 		a.localeCompare(b, 'en', {
 			sensitivity: 'case',
 			caseFirst: 'lower',
