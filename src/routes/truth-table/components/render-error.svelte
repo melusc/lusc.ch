@@ -8,11 +8,9 @@
 	<div class="error">
 		<div class="error-message">Malformed input: {error.message}</div>
 		<div class="error-input">
-			{input.slice(0, error.from)}
-			<span class="error-input-incorrect">
-				{input.slice(error.from, error.to)}
-			</span>
-			{input.slice(error.to)}
+			{input.slice(0, error.from)}<span class="error-input-incorrect"
+				>{input.slice(error.from, error.to)}</span
+			>{input.slice(error.to)}
 		</div>
 	</div>
 {:else}
@@ -34,6 +32,10 @@
 
 	.error-input-incorrect {
 		font-weight: bolder;
+	}
+
+	.error-input {
+		white-space-collapse: preserve;
 	}
 
 	.error-message,
