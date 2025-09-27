@@ -1,7 +1,7 @@
 <script lang="ts">
 	import {operationToString} from '@lusc/truth-table';
 
-	import IncludeStepsInput from './components/include-steps-input.svelte';
+	import Checkbox from './components/checkbox.svelte';
 	import Input from './components/input.svelte';
 	import RenderError from './components/render-error.svelte';
 	import Table from './components/table.svelte';
@@ -11,7 +11,13 @@
 
 	let input = $state('a & b -> (a | b)');
 	let includeSteps = $state(true);
-	const parsed = $derived(tryGenerateTable(input, includeSteps));
+	let sortVariables = $state(true);
+	const parsed = $derived(
+		tryGenerateTable(input, {
+			includeSteps,
+			sortVariables,
+		}),
+	);
 
 	function getInputFromHash(): void {
 		const hashInput = getHash();
@@ -67,7 +73,10 @@
 
 <div id="truth-table">
 	<Input bind:input />
-	<IncludeStepsInput bind:includeSteps />
+	<div class="checkboxes">
+		<Checkbox bind:checked={includeSteps} label="Include steps" />
+		<Checkbox bind:checked={sortVariables} label="Sort variables" />
+	</div>
 	{#if parsed.valid}
 		<Table table={parsed.table} />
 	{:else}
@@ -87,5 +96,10 @@
 		padding: 0.5em 1em;
 
 		--table-border: 3px solid var(--border);
+	}
+
+	.checkboxes {
+		display: flex;
+		gap: 1em;
 	}
 </style>
