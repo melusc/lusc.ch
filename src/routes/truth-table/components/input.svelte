@@ -1,8 +1,14 @@
 <script lang="ts">
+	import type {FormEventHandler} from 'svelte/elements';
+
 	let {input = $bindable()}: {input: string} = $props();
+
+	const handleInput: FormEventHandler<HTMLInputElement> = event => {
+		input = event.currentTarget.value.normalize('NFKC');
+	};
 </script>
 
-<input type="text" bind:value={input} />
+<input type="text" value={input} oninput={handleInput} />
 
 <style>
 	input {
