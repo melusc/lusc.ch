@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@lusc/json-dts':
-        specifier: ^6.1.0
-        version: 6.1.0
+        specifier: ^7.0.0
+        version: 7.0.0
       '@lusc/sudoku':
         specifier: ^6.2.1
         version: 6.2.1
@@ -358,9 +358,9 @@ packages:
     peerDependencies:
       eslint: ^9.38.0
 
-  '@lusc/json-dts@6.1.0':
-    resolution: {integrity: sha512-rtajcp/27q1m7D/wwjaq0YkzLOoz5rtfCujMJYv561YBfUN2FEszIdMbV66ExGCmb7GQz0HOMYVgnh26IgSewg==}
-    engines: {node: ^20.19.1 || ^22.15.0 || ^24.6.0 || ^25.0.0}
+  '@lusc/json-dts@7.0.0':
+    resolution: {integrity: sha512-9ppSg0TVKxLA8XmptgNbMOHeToAzp03YJ/cK/QzjApBxR9VuxIDo1uyjeWiTp2byTZKXRuwxZ97bfKHfz6IXMg==}
+    engines: {node: ^22.15.0 || ^24.6.0 || ^25.0.0}
 
   '@lusc/sudoku@6.2.1':
     resolution: {integrity: sha512-8ZIArY/sdufXJr0j3+gFOi1fSa+OyAa+I59GcVL3NPp3UhnZHLMsOC2guAM1ZRStAuef+COJIdMlrzB7f93mEQ==}
@@ -925,9 +925,9 @@ packages:
     resolution: {integrity: sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==}
     engines: {node: '>=6'}
 
-  camelcase@8.0.0:
-    resolution: {integrity: sha512-8WB3Jcas3swSvjIeA2yvCJ+Miyz5l1ZmB6HFb9R1317dt9LCQoswg/BGrmAmkWVEszSrrg4RwmO46qIm2OEnSA==}
-    engines: {node: '>=16'}
+  camelcase@9.0.0:
+    resolution: {integrity: sha512-TO9xmyXTZ9HUHI8M1OnvExxYB0eYVS/1e5s7IDMTAoIcwUd+aNcFODs6Xk83mobk0velyHFQgA1yIrvYc6wclw==}
+    engines: {node: '>=20'}
 
   caniuse-lite@1.0.30001753:
     resolution: {integrity: sha512-Bj5H35MD/ebaOV4iDLqPEtiliTN29qkGtEHCwawWn4cYm+bPJM2NsaP30vtZcnERClMzp52J4+aw2UNbK4o+zw==}
@@ -2112,9 +2112,9 @@ snapshots:
       - eslint-plugin-import
       - supports-color
 
-  '@lusc/json-dts@6.1.0':
+  '@lusc/json-dts@7.0.0':
     dependencies:
-      camelcase: 8.0.0
+      camelcase: 9.0.0
 
   '@lusc/sudoku@6.2.1': {}
 
@@ -2639,7 +2639,7 @@ snapshots:
 
   callsites@3.1.0: {}
 
-  camelcase@8.0.0: {}
+  camelcase@9.0.0: {}
 
   caniuse-lite@1.0.30001753: {}
 

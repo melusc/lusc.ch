@@ -2,7 +2,7 @@
 	"author": "lusc",
 	"type": "module",
 	"dependencies": {
-		"@lusc/json-dts": "^6.1.0",
+		"@lusc/json-dts": "^7.0.0",
 		"@lusc/sudoku": "^6.2.1",
 		"@lusc/truth-table": "^8.0.0",
 		"dayjs": "^1.11.19",
