@@ -76,9 +76,13 @@ jobs:
           SSH_KEY: ${{ secrets.SSH_KEY }}
       - name: Sync
         run: |
+          # Trust host public key
+          echo "${{ secrets.SSH_HOST }} ${{ secrets.SSH_HOST_KEY }}" >> ~/.ssh/known_hosts
+          ssh-keygen -Hf ~/.ssh/known_hosts
+
           rsync --verbose --human-readable --archive \
           --checksum --delete \
           --rsh "ssh -i ~/.ssh/ssh-key -o StrictHostKeyChecking=accept-new" \
-          . "${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST}}:/var/www/lusc.ch/"
+          . "${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/var/www/lusc.ch/"
       - run: rm ~/.ssh/ssh-key
         if: always()
