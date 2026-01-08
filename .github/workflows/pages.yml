@@ -81,8 +81,8 @@ jobs:
           ssh-keygen -Hf ~/.ssh/known_hosts
 
           rsync --verbose --human-readable --archive \
-          --checksum --delete \
-          --rsh "ssh -i ~/.ssh/ssh-key -o StrictHostKeyChecking=accept-new" \
-          . "${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/var/www/lusc.ch/"
+            --checksum --delete \
+            --rsh "ssh -i ~/.ssh/ssh-key" \
+            . "${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/var/www/lusc.ch/"
       - run: rm ~/.ssh/ssh-key
         if: always()
