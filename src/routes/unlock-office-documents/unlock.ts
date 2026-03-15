@@ -1,10 +1,10 @@
 import type JSZip from 'jszip';
-import {loadAsync} from 'jszip';
+import jszip from 'jszip';
 
 export async function unlock(file: File): Promise<Blob> {
 	let zip: JSZip;
 	try {
-		zip = await loadAsync(file);
+		zip = await jszip.loadAsync(file);
 	} catch {
 		throw new Error('Could not open file as zip');
 	}
