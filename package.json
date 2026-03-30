@@ -3,7 +3,7 @@
 	"type": "module",
 	"dependencies": {
 		"@lusc/json-dts": "^7.0.0",
-		"@lusc/sudoku": "^6.2.1",
+		"@lusc/sudoku": "^7.0.0",
 		"@lusc/truth-table": "^8.0.0",
 		"dayjs": "^1.11.19",
 		"hex-rgb": "^5.0.0",
