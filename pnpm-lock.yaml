@@ -12,8 +12,8 @@ importers:
         specifier: ^7.0.0
         version: 7.0.0
       '@lusc/sudoku':
-        specifier: ^6.2.1
-        version: 6.2.1
+        specifier: ^7.0.0
+        version: 7.0.0
       '@lusc/truth-table':
         specifier: ^8.0.0
         version: 8.0.0
@@ -355,9 +355,9 @@ packages:
     resolution: {integrity: sha512-9ppSg0TVKxLA8XmptgNbMOHeToAzp03YJ/cK/QzjApBxR9VuxIDo1uyjeWiTp2byTZKXRuwxZ97bfKHfz6IXMg==}
     engines: {node: ^22.15.0 || ^24.6.0 || ^25.0.0}
 
-  '@lusc/sudoku@6.2.1':
-    resolution: {integrity: sha512-8ZIArY/sdufXJr0j3+gFOi1fSa+OyAa+I59GcVL3NPp3UhnZHLMsOC2guAM1ZRStAuef+COJIdMlrzB7f93mEQ==}
-    engines: {node: ^20.19.4 || ^22.18.0 || ^24.5.0 || ^25.0.0}
+  '@lusc/sudoku@7.0.0':
+    resolution: {integrity: sha512-qL5xXUBbWhfQP8Sq3Szwq4HZjc3Mo2u1jGdBTf4+2C8DA7wbaNd+ZKJhLoHEVPuIhKzFTzOIobmYfWSDRApAHQ==}
+    engines: {node: ^22.18.0 || ^24.5.0 || ^25.0.0}
 
   '@lusc/truth-table@8.0.0':
     resolution: {integrity: sha512-uoEJ9pawpxrEzkvdyZ4OxoUsZWu6/bHekxxfP7NqUhMY6dpyrs55ANE189R8SEIUuKVA3Ic0xVmnvANWVYyvNg==}
@@ -2212,7 +2212,7 @@ snapshots:
     dependencies:
       camelcase: 9.0.0
 
-  '@lusc/sudoku@6.2.1': {}
+  '@lusc/sudoku@7.0.0': {}
 
   '@lusc/truth-table@8.0.0': {}
 
