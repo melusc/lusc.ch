@@ -134,7 +134,7 @@ export class TicTacToe extends TypedEventTarget<{
 						);
 					}
 
-					yield [...result] as const as Group;
+					yield [...result] as const;
 				}
 			}
 		}
