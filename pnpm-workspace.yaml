@@ -1,4 +1,6 @@
-onlyBuiltDependencies:
-  - '@parcel/watcher'
-  - esbuild
-  - unrs-resolver
+allowBuilds:
+  '@parcel/watcher': false
+  esbuild: false
+  unrs-resolver: false
+
+trustPolicy: no-downgrade
