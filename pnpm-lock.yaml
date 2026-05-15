@@ -15,8 +15,8 @@ importers:
         specifier: ^7.0.0
         version: 7.0.0
       '@lusc/truth-table':
-        specifier: ^8.0.0
-        version: 8.0.0
+        specifier: ^9.0.1
+        version: 9.0.1
       dayjs:
         specifier: ^1.11.20
         version: 1.11.20
@@ -203,9 +203,9 @@ packages:
     resolution: {integrity: sha512-qL5xXUBbWhfQP8Sq3Szwq4HZjc3Mo2u1jGdBTf4+2C8DA7wbaNd+ZKJhLoHEVPuIhKzFTzOIobmYfWSDRApAHQ==}
     engines: {node: ^22.18.0 || ^24.5.0 || ^25.0.0}
 
-  '@lusc/truth-table@8.0.0':
-    resolution: {integrity: sha512-uoEJ9pawpxrEzkvdyZ4OxoUsZWu6/bHekxxfP7NqUhMY6dpyrs55ANE189R8SEIUuKVA3Ic0xVmnvANWVYyvNg==}
-    engines: {node: ^20.19.1 || ^22.15.0 || ^24.6.0 || ^25.0.0}
+  '@lusc/truth-table@9.0.1':
+    resolution: {integrity: sha512-qOIDbMB/xpBCogFBUQVq7u555JsVsYoNzMR2AotzFHqk1vbc66gk8XPySaH3u+ieKF0PIN3JqJUSYcAVnqQWUA==}
+    engines: {node: ^22.22.2 || ^24.15.0 || ^25.9.0 || ^26.1.0}
 
   '@lusc/tsconfig@7.2.0':
     resolution: {integrity: sha512-LnafPidy3cmzznD7irQMQ6EW045neH496WwL4BCK0GCvkg17cu2HaMhUont4kZytat5j7EhPT+VwjAo0xUcUTw==}
@@ -1804,7 +1804,7 @@ snapshots:
 
   '@lusc/sudoku@7.0.0': {}
 
-  '@lusc/truth-table@8.0.0': {}
+  '@lusc/truth-table@9.0.1': {}
 
   '@lusc/tsconfig@7.2.0': {}
 
