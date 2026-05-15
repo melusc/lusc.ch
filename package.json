@@ -4,7 +4,7 @@
 	"dependencies": {
 		"@lusc/json-dts": "^7.0.0",
 		"@lusc/sudoku": "^7.0.0",
-		"@lusc/truth-table": "^8.0.0",
+		"@lusc/truth-table": "^9.0.1",
 		"dayjs": "^1.11.20",
 		"hex-rgb": "^5.0.0",
 		"json5": "^2.2.3",
