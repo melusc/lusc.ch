@@ -1,6 +1,7 @@
 type ExpectedNumber = number | bigint;
 
 export function absBigInt(n: ExpectedNumber): bigint {
+	// eslint-disable-next-line unicorn/prefer-math-abs
 	return BigInt(n < 0 ? -n : n);
 }
 

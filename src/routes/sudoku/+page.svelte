@@ -14,6 +14,8 @@
 	);
 	const {cells, focused, error} = $derived($sudokuState);
 
+	const clearKeys = new Set([' ', 'delete', 'backspace']);
+
 	function handleInput(key: string, metaKeys: MetaKeys = {}): void {
 		if (metaKeys.alt) {
 			return;
@@ -21,7 +23,7 @@
 
 		key = key.toLowerCase();
 
-		if (key === ' ' || key === 'delete' || key === 'backspace') {
+		if (clearKeys.has(key)) {
 			sudokuState.clearCell();
 		}
 
