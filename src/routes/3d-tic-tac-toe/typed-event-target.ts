@@ -12,7 +12,7 @@ export class TypedEventTarget<EventMap extends Record<string, unknown>> {
 		callback: EventHandler<EventMap[Event]>,
 	): void {
 		// @ts-expect-error CustomEvent has .detail and only CustomEvents are dispatched here
-		// Typescript doesn't know that, it thinks Events can be dispatched, too
+		// TypeScript doesn't know that, it thinks Events can be dispatched, too
 		this.#eventTarget.addEventListener(name, callback);
 	}
 

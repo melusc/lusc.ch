@@ -8,7 +8,7 @@
 	}
 	function dispatchIndex(index: number): () => void {
 		return (): void => {
-			oninput(`${index + 1}`);
+			oninput(String(index + 1));
 		};
 	}
 
@@ -23,11 +23,12 @@
 
 <div class="keyboardless-inputs">
 	{#each {length: 9} as _, index (index)}
+		{@const nextIndex = String(index + 1)}
 		<div
 			class="keyboardless-input"
-			title={`${index + 1}`}
+			title={nextIndex}
 			onclick={dispatchIndex(index)}
-			onkeydown={handleKeydown(`${index + 1}`)}
+			onkeydown={handleKeydown(nextIndex)}
 			role="button"
 			tabindex="0"
 		>

@@ -47,6 +47,7 @@ function createTurnStore() {
 	return {
 		subscribe,
 		toggle(): void {
+			// eslint-disable-next-line unicorn/prefer-minimal-ternary
 			update(player => (player === Player.p1 ? Player.p2 : Player.p1));
 		},
 	};
@@ -58,9 +59,6 @@ export class TicTacToe extends TypedEventTarget<{
 		winningGroups: readonly Group[];
 	};
 }> {
-	isFinished = false;
-	turn = createTurnStore();
-
 	readonly #cells: readonly InternalCell[] = Array.from(
 		{length: 4 ** 3},
 		// eslint-disable-next-line unicorn/consistent-function-scoping
@@ -70,6 +68,9 @@ export class TicTacToe extends TypedEventTarget<{
 			_content: undefined,
 		}),
 	);
+
+	isFinished = false;
+	turn = createTurnStore();
 
 	*getGroups(): Iterable<Group> {
 		yield* this.getGroupByDir({x: 1});

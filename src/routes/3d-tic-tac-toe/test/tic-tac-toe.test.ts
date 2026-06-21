@@ -14,14 +14,16 @@ test('#resolveIndex', () => {
 	}
 });
 
+const collator = new Intl.Collator('en-GB', {
+	numeric: true,
+});
+
 test('#getGroups', () => {
 	const t = new TicTacToe();
 
-	const foundGroups: string[] = [];
-
-	for (const group of t.getGroups()) {
-		foundGroups.push(group.map(({index}) => index).join(', '));
-	}
+	const foundGroups: string[] = Array.from(t.getGroups(), group =>
+		group.map(({index}) => index).join(', '),
+	);
 
 	// prettier-ignore
 	const expectedSize
@@ -29,7 +31,7 @@ test('#getGroups', () => {
 		+ (2 * 4 * 3) // 2d diagonals, 2 per layer, 4 layers, 3 directiosn
 		+ 4; // 3d diagonals
 
-	const deduplicated = new Set(foundGroups.toSorted());
+	const deduplicated = new Set(foundGroups.toSorted(collator.compare));
 
 	expect(deduplicated).toMatchSnapshot();
 	// Test if it contains all

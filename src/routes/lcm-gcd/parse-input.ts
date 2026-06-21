@@ -43,7 +43,7 @@ export function parseInput(input: string):
 		}
 	}
 
-	if (newVals.some(value => !Number.isInteger(value))) {
+	if (newVals.some(value => !Number.isSafeInteger(value))) {
 		return {
 			state: States.notAnInteger,
 			uniques: undefined,

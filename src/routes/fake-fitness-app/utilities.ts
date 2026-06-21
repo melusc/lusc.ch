@@ -5,6 +5,7 @@ import {distanceRegex} from './consts.ts';
 
 import {browser} from '$app/environment';
 
+// eslint-disable-next-line unicorn/no-top-level-side-effects
 dayjs.extend(customParseFormat);
 
 let context: CanvasRenderingContext2D | undefined;
@@ -37,7 +38,7 @@ export function calculateTimePerDistance(
 		return false;
 	}
 
-	const parsedDistance = Number.parseFloat(distance);
+	const parsedDistance = Number(distance);
 
 	if (parsedDistance === 0) {
 		// Avoid division by 0
