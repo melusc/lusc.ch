@@ -20,7 +20,7 @@ for (const file of await readdir(buildDirectoryPath, {
 		continue;
 	}
 
-	const url = new URL(`${name === 'index' ? '' : name}`, 'https://lusc.ch');
+	const url = new URL(name === 'index' ? '' : name, 'https://lusc.ch');
 
 	sitemapLines.push(
 		'\t<url>',

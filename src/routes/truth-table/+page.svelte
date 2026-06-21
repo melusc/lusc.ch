@@ -30,37 +30,36 @@
 	}
 
 	$effect(() => {
-		if (browser) {
-			// eslint-disable-next-line svelte/prefer-svelte-reactivity
-			const newUrl = new URL(location.href);
+		if (!browser) {
+			return;
+		}
 
-			let newHash: string;
-			let shouldPush = true;
+		// eslint-disable-next-line svelte/prefer-svelte-reactivity
+		const newUrl = new URL(location.href);
 
-			if (parsed.valid) {
-				newHash = operationToString(parsed.table.ast).replace(
-					/^\((.+)\)$/,
-					'$1',
-				);
+		let newHash: string;
+		let shouldPush = true;
+
+		if (parsed.valid) {
+			newHash = operationToString(parsed.table.ast).replace(/^\((.+)\)$/, '$1');
+		} else {
+			newHash = input;
+
+			// If last was valid don't override it, i.e. pushState
+			// if last was invalid, it's not very valuable: replaceState
+			shouldPush = parsed.valid;
+		}
+
+		newHash = newHash.trim();
+		const oldHash = getHash();
+
+		if (newHash !== oldHash) {
+			newUrl.hash = newHash;
+
+			if (shouldPush) {
+				history.pushState({}, '', newUrl);
 			} else {
-				newHash = input;
-
-				// If last was valid don't override it, i.e. pushState
-				// if last was invalid, it's not very valuable: replaceState
-				shouldPush = parsed.valid;
-			}
-
-			newHash = newHash.trim();
-			const oldHash = getHash();
-
-			if (newHash !== oldHash) {
-				newUrl.hash = newHash;
-
-				if (shouldPush) {
-					history.pushState({}, '', newUrl);
-				} else {
-					history.replaceState({}, '', newUrl);
-				}
+				history.replaceState({}, '', newUrl);
 			}
 		}
 	});

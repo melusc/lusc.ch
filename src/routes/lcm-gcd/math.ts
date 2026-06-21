@@ -5,7 +5,7 @@ export function absBigInt(n: ExpectedNumber): bigint {
 	return BigInt(n < 0 ? -n : n);
 }
 
-const knownGcd: Record<string, bigint> = {};
+const cache = new Map<string, bigint>();
 
 export function gcd(a_: ExpectedNumber, b_: ExpectedNumber): bigint {
 	const bothNegative = a_ < 0 && b_ < 0;
@@ -17,8 +17,8 @@ export function gcd(a_: ExpectedNumber, b_: ExpectedNumber): bigint {
 
 	const key = `${dividend},${divisor}`;
 
-	if (key in knownGcd) {
-		return knownGcd[key]!;
+	if (cache.has(key)) {
+		return cache.get(key)!;
 	}
 
 	let leftover = 1n;
@@ -35,7 +35,7 @@ export function gcd(a_: ExpectedNumber, b_: ExpectedNumber): bigint {
 		divisor *= -1n;
 	}
 
-	knownGcd[key] = divisor;
+	cache.set(key, divisor);
 
 	return divisor;
 }
@@ -56,7 +56,7 @@ function wrap(function_: (a: ExpectedNumber, b: ExpectedNumber) => bigint) {
 			return '';
 		}
 
-		return `${result}`;
+		return String(result);
 	};
 }
 
