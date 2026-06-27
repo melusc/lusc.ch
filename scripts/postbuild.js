@@ -8,9 +8,10 @@ const sitemapLines = [
 	'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
 ];
 
-for (const file of await readdir(buildDirectoryPath, {
+const files = await readdir(buildDirectoryPath, {
 	withFileTypes: true,
-})) {
+});
+for (const file of files) {
 	if (!file.isFile() || !file.name.endsWith('.html')) {
 		continue;
 	}
