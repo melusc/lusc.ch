@@ -27,7 +27,6 @@ export async function unlock(file: File): Promise<Blob> {
 
 			const dom = parser.parseFromString(text, 'text/xml');
 
-			// eslint-disable-next-line unicorn/prefer-scoped-selector
 			for (const element of dom.querySelectorAll(
 				'sheetProtection, workbookProtection, documentProtection',
 			)) {

@@ -47,7 +47,6 @@ function createTurnStore() {
 	return {
 		subscribe,
 		toggle(): void {
-			// eslint-disable-next-line unicorn/prefer-minimal-ternary
 			update(player => (player === Player.p1 ? Player.p2 : Player.p1));
 		},
 	};
