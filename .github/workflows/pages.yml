@@ -25,10 +25,7 @@ jobs:
 
       - uses: pnpm/setup@5d160c5bc68a09337ad0d5654e237e03253b5879 # v1.0.0
         with:
-          runtime: node@v24.17.0
-
-      - name: Install dependencies
-        run: pnpm ci
+          runtime: node@v24.18.0
 
       - name: Type checking
         run: pnpm check
