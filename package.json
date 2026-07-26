@@ -34,7 +34,7 @@
 		"vite": "^8.1.4",
 		"vitest": "^4.1.10"
 	},
-	"license": "MIT",
+	"license": "GPL-3.0",
 	"name": "lusc.ch",
 	"private": true,
 	"scripts": {
