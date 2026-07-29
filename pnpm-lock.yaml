@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@lusc/json-dts':
-        specifier: ^7.1.0
-        version: 7.1.0
+        specifier: ^8.0.0
+        version: 8.0.0
       '@lusc/sudoku':
         specifier: ^7.0.1
         version: 7.0.1
@@ -195,9 +195,9 @@ packages:
     peerDependencies:
       eslint: ^10.7.0
 
-  '@lusc/json-dts@7.1.0':
-    resolution: {integrity: sha512-VWU0dWeJPpKkx4/HSpDFG49zAAoLKESF+onAeg4/eOkXvLs6jJJLgxJH3ARnklZGRqoxeSfDJ6wjApmJrlZoLA==}
-    engines: {node: ^22.23.0 || ^24.17.0 || ^25.9.0 || ^26.3.1}
+  '@lusc/json-dts@8.0.0':
+    resolution: {integrity: sha512-FQ8Q05czk6exI5b1rjkj/uwRRg02WM0ZW2D6Nrqx7GVpkuwsuiit8kaZ9d5kp2upG+mDlDI/3JoDSMAxQtgZ6Q==}
+    engines: {node: ^24.18.0 || ^26.5.0}
 
   '@lusc/sudoku@7.0.1':
     resolution: {integrity: sha512-MdfPMRoS3zRyu+hHUI2KjilPIvweoeMTcuSOaPS5CBMknFMn3UndEXQ2O4fjJoMVCRwT/RJpgHAFMhgCBA/QFw==}
@@ -1919,7 +1919,7 @@ snapshots:
       - supports-color
       - ts-declaration-location
 
-  '@lusc/json-dts@7.1.0':
+  '@lusc/json-dts@8.0.0':
     dependencies:
       camelcase: 9.0.0
 
