@@ -29,13 +29,25 @@ export type Project = (
 
 export default [
 	{
+		key: 'links',
+		text: 'Links',
+		type: 'title',
+	},
+	{
+		key: 'eth',
+		text: 'eth.lusc.ch',
+		description: 'ETH things.',
+		href: 'https://eth.lusc.ch',
+		type: 'anchor',
+	},
+	{
 		key: 'projects',
 		text: 'Projects',
 		type: 'title',
 	},
 	{
 		description:
-			'A sudoku solver that can solve even evil sudokus using multiple strategies such as "Hidden Pairs", "Naked Pairs", and "Pointing Arrows".',
+			'A sudoku solver that can solve hard sudokus using multiple strategies such as "Hidden Pairs", "Naked Pairs", and "Pointing Arrows".',
 		href: '/sudoku',
 		key: 'sudoku-solver',
 		text: 'Sudoku Solver',
@@ -116,4 +128,4 @@ export default [
 		text: 'Animated Triangle',
 		type: 'anchor',
 	},
-] as const;
+] as const satisfies readonly Project[];
