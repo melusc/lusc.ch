@@ -73,7 +73,7 @@ jobs:
           echo "${{ secrets.SSH_HOST }} ${{ secrets.SSH_HOST_KEY }}" >> ~/.ssh/known_hosts
           ssh-keygen -Hf ~/.ssh/known_hosts
 
-          rsync --verbose --human-readable --archive \
+          rsync --verbose --human-readable --recursive \
             --checksum --delete \
             --rsh "ssh -i ~/.ssh/ssh-key" \
             . "${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/var/www/lusc.ch/"
