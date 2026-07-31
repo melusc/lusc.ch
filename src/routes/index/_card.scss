@@ -1,0 +1,57 @@
+/*
+	This file is part of lusc.ch, the author's personal website.
+	Copyright (C) 2026, Luca Schnellmann <oss@lusc.ch>
+
+	This program is free software: you can redistribute it and/or modify
+	it under the terms of the GNU General Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU General Public License for more details.
+*/
+
+// Shared between link-card and project-card
+
+@use 'vars' as *;
+
+.card {
+	display: flex;
+	flex-direction: column;
+
+	background-color: $card;
+	border: 1px solid $border;
+	border-radius: 8px;
+
+	color: inherit;
+	text-decoration: none;
+
+	scroll-margin-top: $nav-height;
+
+	transition:
+		border-color 0.16s ease,
+		background-color 0.16s ease,
+		transform 0.16s ease;
+
+	&:hover {
+		background-color: $card-hover;
+		border-color: $accent-border;
+		transform: translateY(-2px);
+	}
+}
+
+p {
+	margin: 0;
+
+	font-size: 14.5px;
+	line-height: 1.55;
+
+	color: $muted;
+	text-wrap: pretty;
+
+	// The whole card is a link, but its text is still selectable, so show the
+	// I-beam instead of inheriting the link pointer
+	cursor: text;
+}

@@ -16,9 +16,10 @@
 <script lang="ts">
 	import {onMount} from 'svelte';
 
-	import projects from '../projects.ts';
+	import sections from '../projects.ts';
 
-	import SingleProject from './single-project.svelte';
+	import Footer from './footer.svelte';
+	import Section from './section.svelte';
 
 	onMount(() => {
 		if (location.hash) {
@@ -32,36 +33,56 @@
 </script>
 
 <main>
-	<div class="projects">
-		{#each projects as project (project.key)}
-			<SingleProject {project} />
-		{/each}
-	</div>
+	<header>
+		<h1>Personal projects</h1>
+	</header>
+
+	{#each sections as section (section.key)}
+		<Section {section} />
+	{/each}
+
+	<Footer />
 </main>
 
 <style lang="scss">
-	@use 'sass:color';
+	@use '../vars' as *;
 
 	main {
-		display: flex !important;
-		justify-content: center;
-		/* Margin would seem more appropriate but on mobile the background color doesn't apply to that section */
-		padding: 2em 0;
+		max-width: $content-width;
+		margin: 0 auto;
+		padding: 0 $content-padding 96px;
 	}
 
-	.projects {
-		display: flex;
-		flex-direction: column;
-		gap: 2em;
-
-		width: 50vw;
+	header {
+		max-width: 720px;
+		padding: 96px 0 72px;
 	}
 
-	@media (max-width: 500px) {
-		.projects {
-			width: 95vw;
-			display: flex;
-			flex-direction: column;
+	h1 {
+		margin: 0;
+
+		font-size: 40px;
+		font-weight: 600;
+		line-height: 1.05;
+		letter-spacing: -0.01em;
+
+		color: $heading;
+		text-wrap: pretty;
+
+		cursor: text;
+	}
+
+	@media (max-width: 700px) {
+		main {
+			padding: 0 $content-padding-mobile 64px;
+		}
+
+		header {
+			padding: 56px 0 40px;
+		}
+
+		h1 {
+			font-size: 32px;
 		}
 	}
 </style>

@@ -13,34 +13,27 @@
 	GNU General Public License for more details.
 */
 
-@use './fonts/OpenSans-Regular.scss';
-@use './theme.scss' as *;
+@use '../../common/theme.scss' as theme;
 
-:root {
-	--blue: #{$blue};
-	--red: #{$red};
-	--green: #{$green};
-	--bg: #{$bg};
-	--text: #{$text};
-	--border: #{$border};
-	--card: #{$card};
-	--anchor: #{$anchor};
-}
+$bg: theme.$bg;
+$accent: theme.$blue;
+$accent-border: rgba(theme.$blue, 0.55);
 
-html,
-body,
-#app {
-	display: contents;
-}
+$card: #1e212b;
+$card-hover: #232735;
 
-html {
-	font-family: 'Open Sans', 'Segoe UI', 'sans-serif';
-	scroll-behavior: smooth;
+$border: rgba(255, 255, 255, 0.06);
+$border-strong: rgba(255, 255, 255, 0.08);
 
-	background-color: var(--bg);
-	color: var(--text);
-}
+$heading: #f3f4f7;
+$card-heading: #eef0f4;
+$text: #e8e9ee;
+$muted: #9aa0ad;
+$footer-text: #8b91a0;
 
-a {
-	color: var(--anchor);
-}
+// Height of the sticky nav, so anchor targets aren't hidden behind it
+$nav-height: 80px;
+
+$content-width: 1120px;
+$content-padding: 40px;
+$content-padding-mobile: 20px;

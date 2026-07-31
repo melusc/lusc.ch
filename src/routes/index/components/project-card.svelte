@@ -14,11 +14,42 @@
 -->
 
 <script lang="ts">
-	import type {Snippet} from 'svelte';
+	import type {LocalLink} from '../projects.ts';
 
-	import '../common/common.scss';
-
-	const {children}: {children: Snippet} = $props();
+	const {project}: {project: LocalLink} = $props();
 </script>
 
-{@render children()}
+<a
+	class="card"
+	id={project.key}
+	// eslint-disable-next-line svelte/no-navigation-without-resolve
+	href={project.href}
+	draggable="false"
+	data-sveltekit-reload
+>
+	<h3>{project.text}</h3>
+	<p>{project.description}</p>
+</a>
+
+<style lang="scss">
+	@use '../card';
+	@use '../vars' as *;
+
+	.card {
+		gap: 12px;
+		padding: 24px;
+	}
+
+	h3 {
+		margin: 0;
+
+		font-size: 24px;
+		font-weight: 600;
+		line-height: 1.1;
+
+		color: $card-heading;
+		text-wrap: pretty;
+
+		cursor: text;
+	}
+</style>

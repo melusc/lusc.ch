@@ -15,52 +15,68 @@
 
 <script lang="ts">
 	import Github from './icons/github.svelte';
-
-	import {resolve} from '$app/paths';
 </script>
 
-<header>
-	<div class="header-start">
-		<a href={resolve('/')}>lusc.ch</a>
-	</div>
-	<div class="header-end">
-		<a href="https://github.com/melusc" rel="noreferrer noopener">
-			<Github />
-		</a>
-	</div>
-</header>
+<nav>
+	<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
+	<a class="home-link" href="/">lusc.ch</a>
+
+	<a
+		class="github"
+		href="https://github.com/melusc"
+		rel="noreferrer noopener"
+		aria-label="GitHub"
+	>
+		<Github />
+	</a>
+</nav>
 
 <style lang="scss">
-	@use 'sass:color';
-	@use '../../../common/theme.scss' as *;
+	@use '../vars' as *;
 
-	header {
-		background-color: $card;
-		padding: 1.5em 1em;
+	nav {
+		position: sticky;
+		top: 0;
+		z-index: 10;
 
-		display: grid;
-		grid-template-columns: auto 1fr auto;
-		align-items: center;
-
-		box-shadow: 0 2px 7px color.adjust($card, $lightness: -7%);
-	}
-
-	.header-start {
-		grid-column: 1;
-	}
-
-	.header-end {
-		grid-column: 3;
-		justify-content: flex-end;
-	}
-
-	.header-end,
-	.header-start {
 		display: flex;
 		align-items: center;
+		justify-content: space-between;
+
+		padding: 18px $content-padding;
+
+		background-color: rgba($bg, 0.82);
+		backdrop-filter: blur(10px);
+		border-bottom: 1px solid $border-strong;
 	}
 
-	header :global(svg) {
-		height: 1.7em;
+	.home-link {
+		font-size: 22px;
+		font-weight: 600;
+		letter-spacing: 0.02em;
+
+		color: $accent;
+		text-decoration: none;
+	}
+
+	.github {
+		display: inline-flex;
+
+		color: $muted;
+		transition: color 0.15s ease;
+
+		&:hover {
+			color: $text;
+		}
+
+		:global(svg) {
+			height: 22px;
+		}
+	}
+
+	@media (max-width: 700px) {
+		nav {
+			padding: 18px $content-padding-mobile;
+		}
 	}
 </style>

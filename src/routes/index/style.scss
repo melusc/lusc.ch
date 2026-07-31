@@ -13,6 +13,21 @@
 	GNU General Public License for more details.
 */
 
+@use '../../common/fonts/OpenSans-Medium.scss';
+@use '../../common/fonts/OpenSans-SemiBold.scss';
+
+@use 'vars' as *;
+
 #index {
-	font-size: 20px;
+	font-size: 16px;
+
+	min-height: 100vh;
+
+	color: $text;
+
+	-webkit-font-smoothing: antialiased;
+
+	::selection {
+		background-color: rgba($accent, 0.3);
+	}
 }

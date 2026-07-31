@@ -1,4 +1,4 @@
-/*
+<!--
 	This file is part of lusc.ch, the author's personal website.
 	Copyright (C) 2026, Luca Schnellmann <oss@lusc.ch>
 
@@ -11,36 +11,32 @@
 	but WITHOUT ANY WARRANTY; without even the implied warranty of
 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 	GNU General Public License for more details.
-*/
+-->
 
-@use './fonts/OpenSans-Regular.scss';
-@use './theme.scss' as *;
+<footer>
+	<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
+	<a class="home-link" href="/">lusc.ch</a>
+</footer>
 
-:root {
-	--blue: #{$blue};
-	--red: #{$red};
-	--green: #{$green};
-	--bg: #{$bg};
-	--text: #{$text};
-	--border: #{$border};
-	--card: #{$card};
-	--anchor: #{$anchor};
-}
+<style lang="scss">
+	@use '../vars' as *;
 
-html,
-body,
-#app {
-	display: contents;
-}
+	footer {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		gap: 12px;
 
-html {
-	font-family: 'Open Sans', 'Segoe UI', 'sans-serif';
-	scroll-behavior: smooth;
+		margin-top: 80px;
+		padding-top: 24px;
 
-	background-color: var(--bg);
-	color: var(--text);
-}
+		border-top: 1px solid $border-strong;
+	}
 
-a {
-	color: var(--anchor);
-}
+	.home-link {
+		font-size: 18px;
+		color: $accent;
+		text-decoration: none;
+	}
+</style>
