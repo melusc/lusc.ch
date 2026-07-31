@@ -22,7 +22,7 @@
 </script>
 
 <!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
-<a class="card" id={link.key} href={link.href} rel="noopener" draggable="false">
+<a class="card" id={link.key} href={link.href} rel="noopener">
 	<div class="title">
 		<span>{link.text}</span>
 		<ArrowUpRight />
@@ -49,8 +49,6 @@
 		span {
 			font-weight: 600;
 			color: $text;
-
-			cursor: text;
 		}
 
 		:global(svg) {

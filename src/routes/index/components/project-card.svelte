@@ -24,7 +24,6 @@
 	id={project.key}
 	// eslint-disable-next-line svelte/no-navigation-without-resolve
 	href={project.href}
-	draggable="false"
 	data-sveltekit-reload
 >
 	<h3>{project.text}</h3>
@@ -49,7 +48,5 @@
 
 		color: $card-heading;
 		text-wrap: pretty;
-
-		cursor: text;
 	}
 </style>

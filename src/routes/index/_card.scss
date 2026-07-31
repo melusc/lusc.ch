@@ -50,8 +50,4 @@ p {
 
 	color: $muted;
 	text-wrap: pretty;
-
-	// The whole card is a link, but its text is still selectable, so show the
-	// I-beam instead of inheriting the link pointer
-	cursor: text;
 }
