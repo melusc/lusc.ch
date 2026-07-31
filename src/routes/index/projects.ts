@@ -124,12 +124,6 @@ export default [
 				text: 'Line Clock',
 			},
 			{
-				description: 'A tool which allows you to sort JSON5 by its keys.',
-				href: '/sort-json5-keys',
-				key: 'sort-json5-keys',
-				text: 'Sort JSON5',
-			},
-			{
 				description: 'A triangle that moves around and flashes.',
 				href: '/animated-triangle',
 				key: 'animated-triangle',
