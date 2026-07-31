@@ -44,6 +44,7 @@
 		justify-content: space-between;
 
 		padding: 18px $content-padding;
+		font-size: 22px;
 
 		background-color: rgba($bg, 0.82);
 		backdrop-filter: blur(10px);
@@ -51,7 +52,6 @@
 	}
 
 	.home-link {
-		font-size: 22px;
 		font-weight: 600;
 		letter-spacing: 0.02em;
 
@@ -70,7 +70,8 @@
 		}
 
 		:global(svg) {
-			height: 22px;
+			height: 1em;
+			width: 1em;
 		}
 	}
 

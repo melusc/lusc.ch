@@ -44,9 +44,9 @@
 		align-items: center;
 		justify-content: space-between;
 		gap: 12px;
+		font-size: 22px;
 
 		span {
-			font-size: 22px;
 			font-weight: 600;
 			color: $text;
 
@@ -55,8 +55,8 @@
 
 		:global(svg) {
 			flex-shrink: 0;
-			width: 16px;
-			height: 16px;
+			width: 1em;
+			height: 1em;
 			color: $accent;
 		}
 	}
