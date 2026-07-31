@@ -61,6 +61,7 @@ $display-gradient: false; // Show gradient seperately instead of as text bg, for
 		list.join($gradient, reverse(pop($gradient)), $separator: comma)
 	);
 	background-size: $bg-width;
+	background-repeat: repeat-x;
 	animation: rainbow-animation 5s linear infinite;
 
 	width: 100%;

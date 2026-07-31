@@ -156,6 +156,7 @@
 			0 0,
 			-25px -25px,
 			25px 25px;
+		background-repeat: repeat;
 		height: 100vh;
 	}
 </style>
