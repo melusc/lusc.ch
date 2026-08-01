@@ -1,1 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@font-face {
+	font-family: 'Orbitron';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/src/common/fonts/orbitron-v35-latin-regular.woff2') format('woff2');
+	font-display: swap;
+}
