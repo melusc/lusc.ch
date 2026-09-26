@@ -77,16 +77,16 @@
 	function handleDragOver(event: DragEvent): void {
 		event.preventDefault();
 
-		if (event.dataTransfer!.types.includes('Files')) {
-			isDraggingOver = true;
-			const file = event.dataTransfer?.items[0];
-			if (file && isValidFile(file)) {
-				isInvalidFileDrag = false;
-				event.dataTransfer.dropEffect = 'copy';
-			} else {
-				isInvalidFileDrag = true;
-				event.dataTransfer!.dropEffect = 'none';
-			}
+		if (!event.dataTransfer!.types.includes('Files')) return;
+
+		isDraggingOver = true;
+		const file = event.dataTransfer?.items[0];
+		if (file && isValidFile(file)) {
+			isInvalidFileDrag = false;
+			event.dataTransfer.dropEffect = 'copy';
+		} else {
+			isInvalidFileDrag = true;
+			event.dataTransfer!.dropEffect = 'none';
 		}
 	}
 

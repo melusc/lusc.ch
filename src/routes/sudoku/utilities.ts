@@ -72,11 +72,7 @@ export function getNewFocused(
 				return focused + 8;
 			}
 
-			if (col > 8) {
-				return focused - 8;
-			}
-
-			return focused + direction;
+			return col > 8 ? focused - 8 : focused + direction;
 		}
 
 		case ' ': {
