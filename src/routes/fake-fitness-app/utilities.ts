@@ -103,9 +103,7 @@ export const calculateSecondsSinceMidnight = (
 ): number | false => {
 	const parsedDuration = parseDuration(duration);
 
-	return parsedDuration.isValid()
-		? parsedDuration.diff(midnight, 's', true)
-		: false;
+	return parsedDuration.isValid() && parsedDuration.diff(midnight, 's', true);
 };
 
 export const toDate = (v: string): dayjs.Dayjs =>
