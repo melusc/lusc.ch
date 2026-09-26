@@ -68,14 +68,16 @@
 		newHash = newHash.trim();
 		const oldHash = getHash();
 
-		if (newHash !== oldHash) {
-			newUrl.hash = newHash;
+		if (newHash === oldHash) {
+			return;
+		}
 
-			if (shouldPush) {
-				history.pushState({}, '', newUrl);
-			} else {
-				history.replaceState({}, '', newUrl);
-			}
+		newUrl.hash = newHash;
+
+		if (shouldPush) {
+			history.pushState({}, '', newUrl);
+		} else {
+			history.replaceState({}, '', newUrl);
 		}
 	});
 </script>

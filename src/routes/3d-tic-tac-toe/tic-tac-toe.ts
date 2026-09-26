@@ -183,11 +183,10 @@ export class TicTacToe extends TypedEventTarget<{
 		for (const cell of group) {
 			const content = get<Player | undefined>(cell.content);
 
-			if (content === undefined) {
-				return false;
-			}
-
-			if (lastPlayer !== undefined && lastPlayer !== content) {
+			if (
+				content === undefined ||
+				(lastPlayer !== undefined && lastPlayer !== content)
+			) {
 				return false;
 			}
 
@@ -206,15 +205,17 @@ export class TicTacToe extends TypedEventTarget<{
 		let winningPlayer: Player | undefined;
 		for (const group of this.getGroups()) {
 			const groupWinner = this.isGroupWinning(group);
-			if (groupWinner !== false) {
-				if (winningPlayer !== undefined && winningPlayer !== groupWinner) {
-					// This should be impossible, because it doesn't get here if `isFinished === true`
-					throw new Error('Got two winners.');
-				}
-
-				winningPlayer = groupWinner;
-				groups.push(group);
+			if (groupWinner === false) {
+				continue;
 			}
+
+			if (winningPlayer !== undefined && winningPlayer !== groupWinner) {
+				// This should be impossible, because it doesn't get here if `isFinished === true`
+				throw new Error('Got two winners.');
+			}
+
+			winningPlayer = groupWinner;
+			groups.push(group);
 		}
 
 		if (winningPlayer === undefined) {

@@ -40,10 +40,12 @@ export function gcd(a_: ExpectedNumber, b_: ExpectedNumber): bigint {
 
 	while (leftover !== 0n) {
 		leftover = dividend % divisor;
-		if (leftover !== 0n) {
-			dividend = divisor;
-			divisor = leftover;
+		if (leftover === 0n) {
+			continue;
 		}
+
+		dividend = divisor;
+		divisor = leftover;
 	}
 
 	if (bothNegative) {
@@ -67,11 +69,7 @@ function wrap(function_: (a: ExpectedNumber, b: ExpectedNumber) => bigint) {
 			result = result === undefined ? n : function_(result, n);
 		}
 
-		if (result === undefined) {
-			return '';
-		}
-
-		return String(result);
+		return result === undefined ? '' : String(result);
 	};
 }
 

@@ -45,11 +45,7 @@ export function calculateTimePerDistance(
 	distance: string,
 	duration: string,
 ): string | false {
-	if (!isValidDuration(duration)) {
-		return false;
-	}
-
-	if (!distanceRegex.test(distance)) {
+	if (!isValidDuration(duration) || !distanceRegex.test(distance)) {
 		return false;
 	}
 
@@ -79,11 +75,7 @@ export function calculateTimePerDistance(
 export function toSpeed(duration: string, distance: string): string | false {
 	const durationInSeconds = calculateSecondsSinceMidnight(duration);
 
-	if (durationInSeconds === false) {
-		return false;
-	}
-
-	if (!distanceRegex.test(distance)) {
+	if (durationInSeconds === false || !distanceRegex.test(distance)) {
 		return false;
 	}
 
@@ -111,11 +103,9 @@ export const calculateSecondsSinceMidnight = (
 ): number | false => {
 	const parsedDuration = parseDuration(duration);
 
-	if (!parsedDuration.isValid()) {
-		return false;
-	}
-
-	return parsedDuration.diff(midnight, 's', true);
+	return parsedDuration.isValid()
+		? parsedDuration.diff(midnight, 's', true)
+		: false;
 };
 
 export const toDate = (v: string): dayjs.Dayjs =>
