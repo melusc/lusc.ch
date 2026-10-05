@@ -22,7 +22,7 @@
 	import Table from './components/table.svelte';
 	import {getHash, tryGenerateTable} from './utilities.ts';
 
-	import {browser} from '$app/environment';
+	import {browser} from '$app/env';
 
 	let input = $state('a & b -> (a | b)');
 	let includeSteps = $state(true);

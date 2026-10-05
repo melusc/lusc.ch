@@ -22,7 +22,7 @@
 	import {hexRgb} from './utilities.ts';
 	import './style.scss';
 
-	import {browser} from '$app/environment';
+	import {browser} from '$app/env';
 
 	let red = $state(0xFF);
 	let green = $state(0xFF);

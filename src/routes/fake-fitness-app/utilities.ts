@@ -18,7 +18,7 @@ import customParseFormat from 'dayjs/plugin/customParseFormat.js';
 
 import {distanceRegex} from './consts.ts';
 
-import {browser} from '$app/environment';
+import {browser} from '$app/env';
 
 // eslint-disable-next-line unicorn/no-top-level-side-effects
 dayjs.extend(customParseFormat);
