@@ -17,7 +17,7 @@
 	import ClockLine from './clock-line.svelte';
 	import './style.scss';
 
-	import {browser} from '$app/environment';
+	import {browser} from '$app/env';
 
 	type TimeValue = [number, number];
 

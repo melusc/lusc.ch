@@ -25,7 +25,7 @@
 
 	import './style.scss';
 
-	import {browser} from '$app/environment';
+	import {browser} from '$app/env';
 
 	let width = $state(1440);
 	let height = $state(2960);

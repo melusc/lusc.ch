@@ -19,13 +19,7 @@
 	const {project}: {project: LocalLink} = $props();
 </script>
 
-<a
-	class="card"
-	id={project.key}
-	// eslint-disable-next-line svelte/no-navigation-without-resolve
-	href={project.href}
-	data-sveltekit-reload
->
+<a class="card" id={project.key} href={project.href} data-sveltekit-reload>
 	<h3>{project.text}</h3>
 	<p>{project.description}</p>
 </a>
