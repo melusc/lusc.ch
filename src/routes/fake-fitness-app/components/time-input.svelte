@@ -26,7 +26,7 @@
 	import {timeValid, toTime} from '../utilities.ts';
 
 	let {
-		class: className,
+		class: className = '',
 		time = $bindable(timeAtLoad),
 		width,
 	}: {class?: string; time?: string; width?: string} = $props();
@@ -38,7 +38,7 @@
 </script>
 
 <input
-	class="input-remove-input-visuals {className ?? ''}"
+	class="input-remove-input-visuals {className}"
 	class:invalid={!timeValid(time)}
 	value={time}
 	placeholder="HH:mm"
