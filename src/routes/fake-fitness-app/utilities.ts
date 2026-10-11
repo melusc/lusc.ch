@@ -20,7 +20,6 @@ import {distanceRegex} from './consts.ts';
 
 import {browser} from '$app/env';
 
-// eslint-disable-next-line unicorn/no-top-level-side-effects
 dayjs.extend(customParseFormat);
 
 let context: CanvasRenderingContext2D | undefined;
