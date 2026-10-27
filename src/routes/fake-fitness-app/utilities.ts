@@ -66,9 +66,8 @@ export function calculateTimePerDistance(
 	const diff = midnight.add(distancePerTime, 's');
 
 	// If hours is 0, don't display it
-	return diff.get('h') === 0
-		? diff.format('m\'ss"')
-		: diff.format('H[h] m\'ss"');
+	const format = diff.get('h') === 0 ? 'm\'ss"' : 'H[h] m\'ss"';
+	return diff.format(format);
 }
 
 export function toSpeed(duration: string, distance: string): string | false {
