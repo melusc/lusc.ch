@@ -195,8 +195,8 @@ importers:
         specifier: ^21.1.0
         version: 21.1.0(@typescript-eslint/utils@8.72.0(eslint@10.13.0)(typescript@6.0.3))(eslint@10.13.0)
       '@lusc/tsconfig':
-        specifier: ^7.2.1
-        version: 7.2.1
+        specifier: ^8.0.0
+        version: 8.0.0
       '@sveltejs/adapter-static':
         specifier: ^4.0.0
         version: 4.0.0(@sveltejs/kit@3.1.0(@sveltejs/vite-plugin-svelte@7.3.1(svelte@5.57.2(@typescript-eslint/types@8.72.0))(vite@8.3.5(@types/node@26.6.5)(sass@1.106.1)(yaml@2.9.1)))(svelte@5.57.2(@typescript-eslint/types@8.72.0))(typescript@6.0.3)(vite@8.3.5(@types/node@26.6.5)(sass@1.106.1)(yaml@2.9.1)))
@@ -381,9 +381,9 @@ packages:
     resolution: {integrity: sha512-FK3joEXhKQ6PtLyzUMtB5MbN768amBIpIB3XTPcUHLdvEl/+1r5XJojCoh3qOCVLMvI9P8lddvq862k5MOMfNg==}
     engines: {node: ^24.18.0 || ^26.5.0}
 
-  '@lusc/tsconfig@7.2.1':
-    resolution: {integrity: sha512-BckyzQRTbjPoeL9wRTc8hnHwCl4u8F0Z27dhcm7LtktB3DuPhUX3XIgr3syfXxDl3mT6/y6YpjesG4MIG86rAA==}
-    engines: {node: ^20.19.1 || ^22.15.0 || ^24.6.0 || ^25.0.0}
+  '@lusc/tsconfig@8.0.0':
+    resolution: {integrity: sha512-GNM7qgzUbH9ZfWFzr5vQNOMCSjMqgu69xM62iPpWrQECqfLQ/qHutZHDufbHexiK4GQUr/HAkCChMZR8ng8EmQ==}
+    engines: {node: ^24.22.1 || ^26.12.1}
 
   '@napi-rs/wasm-runtime@1.2.4':
     resolution: {integrity: sha512-AJxoUD2/15ESHbvpcyjU274nsAPLuOtPHCk0vKJM5pj//Fg/B1FXNWjPnXTT9PymCYYiHo4zPj0ZomXBKhoy7g==}
@@ -2129,7 +2129,7 @@ snapshots:
 
   '@lusc/truth-table@10.0.0': {}
 
-  '@lusc/tsconfig@7.2.1': {}
+  '@lusc/tsconfig@8.0.0': {}
 
   '@napi-rs/wasm-runtime@1.2.4(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)':
     dependencies:
