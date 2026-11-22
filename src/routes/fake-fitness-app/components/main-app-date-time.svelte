@@ -50,9 +50,9 @@
 
 <div class="main-app-date-time">
 	<div class="day-date-inputs">
-		<span
-			>{#if dateValid(date)}{toDate(date).format('ddd, ')}{/if}</span
-		>
+		<span>
+			{#if dateValid(date)}{toDate(date).format('ddd, ')}{/if}
+		</span>
 		<input
 			class="input-remove-input-visuals"
 			class:invalid={!dateValid(date)}
