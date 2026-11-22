@@ -19,9 +19,9 @@
 	const {player}: {player: Player} = $props();
 </script>
 
-<span class:p1={player === Player.p1} class:p2={player === Player.p2}
-	>{player === Player.p1 ? 'Player 1' : 'Player 2'}</span
->
+<span class:p1={player === Player.p1} class:p2={player === Player.p2}>
+	{player === Player.p1 ? 'Player 1' : 'Player 2'}
+</span>
 
 <style>
 	.p1 {

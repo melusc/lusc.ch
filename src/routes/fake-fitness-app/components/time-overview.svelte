@@ -53,8 +53,9 @@
 		</div>
 		<VerticalBorder height={12} margin={10} />
 		<div class="time-per-distance" class:invalid={timePerDistance === false}>
-			{timePerDistance === false ? 'Invalid' : timePerDistance}<small>/km</small
-			>
+			{timePerDistance === false ? 'Invalid' : timePerDistance}<small>
+				/km
+			</small>
 		</div>
 	</div>
 </div>
