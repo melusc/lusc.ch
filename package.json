@@ -16,22 +16,22 @@
 		"@lusc/tsconfig": "^8.0.0",
 		"@sveltejs/adapter-static": "^4.0.1",
 		"@sveltejs/kit": "^3.4.0",
-		"@sveltejs/vite-plugin-svelte": "^7.3.1",
+		"@sveltejs/vite-plugin-svelte": "^7.3.2",
 		"@types/lodash-es": "^4.17.12",
-		"@types/node": "^26.6.6",
-		"@typescript-eslint/parser": "^8.73.0",
+		"@types/node": "^26.6.10",
+		"@typescript-eslint/parser": "^8.74.0",
 		"eslint": "^10.15.0",
 		"eslint-plugin-svelte": "^3.24.1",
 		"prettier": "^3.10.1",
 		"prettier-plugin-svelte": "^4.2.0",
 		"rimraf": "^6.1.4",
 		"sass": "^1.108.2",
-		"svelte": "^5.58.0",
+		"svelte": "^5.59.1",
 		"svelte-check": "^4.7.8",
-		"svelte-eslint-parser": "^1.10.1",
+		"svelte-eslint-parser": "^1.12.0",
 		"typescript": "^6.0.3",
 		"vite": "^8.3.8",
-		"vitest": "^5.1.1"
+		"vitest": "^5.1.2"
 	},
 	"license": "GPL-3.0",
 	"name": "lusc.ch",
@@ -49,5 +49,5 @@
 		"node": "^26.13.1"
 	},
 	"version": "1.0.0",
-	"packageManager": "pnpm@12.21.0"
+	"packageManager": "pnpm@12.23.0"
 }
